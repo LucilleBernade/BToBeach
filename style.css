@@ -1,0 +1,864 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*-------- Navigation --------*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #071d4c;
+  font-size: 0.8rem;
+  border-bottom: solid 0.3rem;
+  border-color: #b98800;
+}
+
+.logo-btob {
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: #b98800;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+/*-------- Header --------*/
+
+.entry-title {
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
+  color: #b98800;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-menu>.nav-item {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+  } 
+  .entry-title {
+    margin: 4rem auto 4rem 6rem;
+    font-size: 2rem;
+  }
+  .logo-btob {
+    width: 8rem;
+    margin-left: 1rem;
+  }
+}
+
+p {
+  color: rgb(53, 77, 121);
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+
+/*-------- Slide  --------*/
+
+#slide {
+  width: 90%;
+  max-width: 900px;
+  overflow: hidden;
+  margin: auto;
+  border: 2px solid;
+  border-radius: 1rem;
+}
+
+#slide figure {
+  margin: 0;
+  position: relative; 
+  width: 1000%;
+  animation: 30s slidy infinite ;
+}
+
+#slide figure .img-slide {
+  width: 10%;
+  float: left;
+}
+
+@keyframes slidy {
+  0% {
+    right: 0%;
+  }
+
+  11% {
+    right: 100%;
+  }
+
+  22% {
+    right: 100%;
+  }
+
+  33% {
+    right: 200%;
+  }
+
+  44% {
+    right: 200%;
+  }
+
+  55% {
+    right: 300%;
+  }
+  66% {
+    right: 300%;
+  }
+
+  77% {
+    right: 400%;
+  }
+
+  88% {
+    right: 400%;
+  }
+
+  100% {
+    right: 500%;
+  }
+  
+}
+
+/*-------- Section bulle et avis --------*/
+
+span {
+  color: #b98800;
+}
+
+.title-recommend {
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
+  color: #b98800;
+}
+
+.bulle {
+  width: 13%;
+  height: 13%;
+  margin: 0.8rem;
+  border: solid 2px black;
+  border-radius: 1rem;
+}
+
+.global-feedbacks {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+
+.hidden-global-feedbacks {
+  display: none;
+  align-items: center;
+  width: 95%;
+}
+
+.hidden-global-feedbacks p {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+
+.global-feedbacks p {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+  ;
+}
+
+.button-feedback {
+  margin: 1rem auto auto 44%;
+  font-size: 0.5rem;
+  background: #b98800;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
+}
+
+@media screen and (min-width: 600px) {
+  .title-recommend {
+    margin: 4rem auto 4rem 6rem;
+    font-size: 1.7rem;
+  }
+  .bulle { 
+    margin-top: 2rem;
+    margin-left: 6rem;
+    width: 11%;
+    border-radius: 1rem;
+  }
+  .global-feedbacks p {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+  }
+  .hidden-global-feedbacks p {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+  }
+  .button-feedback {
+    margin: 2rem auto auto 50%;
+    font-size: 1rem;
+  }
+}
+
+/*-------- footer --------*/
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #071d4c;
+  color: #b98800;
+  margin-top: 3rem;
+  padding: 0.65rem;
+  border-top: solid 0.3rem;
+  border-color: #b98800;
+}
+
+.logo-btob1 {
+  width: 3rem;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.footer-container p {
+  font-size: 0.65rem;
+  color: #b98800;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    margin-top: 5rem;
+    padding: 0.90rem;
+  }
+  .logo-btob1 {
+    width: 7rem;
+  }
+  .footer-container p {
+    font-size: 1.7rem;
+  }
+
+  
+  .hidden-text {
+    display: block;
+  }
+
+}
+
+
+.social-icon{
+  margin-right: 1.2rem;
+  width: 1.6rem; 
+
+}
+
+@media screen and (min-width: 600px) {
+  .social-icon{
+    width: 2.5rem; 
+  
+  }
+
+}
+
+
+
+/*------------Arrow-up----------*/
+
+
+
+.arrow-up {
+  color: #b98800;
+  position: fixed;
+  opacity: 0.50;
+  height: 1.6rem;
+  width: 1.6rem;
+  bottom: 1vh;
+  right: 1vw;
+  animation: 2s infinite linear alternate bump;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  .arrow-up {
+    color: #b98800;
+    opacity: 0.35;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    animation: 2s linear alternate bump;
+  }
+
+  .arrow-up:hover {
+    opacity: 5;
+  }
+  
+}
+
+@keyframes bump {
+
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: 0.1px;
+  }
+
+  50% {
+    bottom: 0.2px;
+  }
+
+  75% {
+    bottom: 0.1px;
+  }
+
+  100% {
+    bottom: 0.;
+
+  }
+}
+
+
+
+
+
+/*-------- about-us page--------*/
+
+.team-title {
+  font-size: 1rem;
+  color: #b98800;
+  padding-bottom: 1.7rem;
+  margin-left: 1.5rem;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .team-title {
+    margin-left: 6.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+.column-img {
+  display: flex;
+  justify-content: space-around;
+  /*space around pour mobile*/
+}
+
+.column-img-solo {
+
+  display: flex;
+  justify-content: center;
+}
+
+.img-team {
+  width: 8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .img-team {
+    width: 10rem;
+  }
+}
+
+.philo-title {
+  font-size: 1rem;
+  color: #b98800;
+}
+
+
+@media screen and (min-width: 600px) {
+  .philo-title {
+    font-size: 1.6rem;
+  }
+}
+
+.team-history {
+  margin-top: 1.6rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .team-history {
+    padding: 4.5rem 8em 8rem 6.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .team-history {
+    padding: 4.5rem 8em 9rem 6.5rem;
+  }
+}
+
+.about-text {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 600px) {
+  .about-text {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+/*-------- page contact --------*/
+
+.contact {
+    border: 1rem solid white;
+    border-radius: 3rem;
+    margin: 6rem;
+    background: url("./assets/contact/leaf_contact.png");
+    background-size: cover;
+    text-align: center;
+    
+}
+
+
+@media screen and (min-width: 600px) {
+  .contact {
+    font-size: 1.2rem;
+    background: url("./assets/contact/leaf_contact_big.png");
+    background-size: cover;
+  }
+}
+
+
+.contactform {
+  color: white;
+  font-weight: bold;
+}
+
+.h2-contact {
+color: #d8a313  ;
+margin: 1.5rem;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 40%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+#periode {
+  border-radius: 2rem;
+}
+
+textarea {
+  resize: none;
+  width: 40%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+input[type="submit"] {
+  background: #b98800;
+  color: white;
+  border: 3px solid black;
+  border-radius: 2rem;
+  padding: 20px 20px;
+  margin-bottom: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
+}
+
+@media screen and (max-width: 900px) {
+  .h2-contact {
+    font-size: 1.2rem;
+    }
+    .contact {
+      margin: 0;
+    }
+    .check2 {
+      font-size: 1rem;
+    }
+    .coche {
+      font-size: 1rem;
+    }
+}
+
+/*-------- Page Tour --------*/
+.concepttour {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 2%;
+}
+
+
+
+.reservtour {
+  background: #b98800;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 15px 10px;
+  margin-bottom: 2rem;
+}
+
+
+#imgid1tour {
+  text-align: center;
+  margin: 1.2rem 1.2rem;
+}
+
+.img1tour {
+  align-items: center;
+  max-width: 100%;
+  border-radius: 5%;
+  border:solid 2px black;
+}
+
+#imgx5toptour {
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img2t {
+  margin: 5%;
+  max-width: 90%;
+  border-radius: 10%
+}
+
+
+.h2Tour {
+  margin-left: 2rem;
+}
+
+.kilometrage {
+  text-align: end;
+  font-size: 0.6rem;
+}
+
+.VilleTour {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 2rem;
+}
+
+.imgVilleTour2 {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 2rem;
+}
+
+.title-recommend{
+  font-size: 1,5rem ;
+}
+
+.van{
+  height: 30%;
+  width: 30%;
+  color: rgb(3, 3, 87);
+  position: relative;
+  animation: 4s ease-out infinite roll ;
+}
+
+
+
+@keyframes roll {
+  0%{
+      left: 0rem
+  }
+
+  100% {
+    left: 70%;
+   
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+
+.van{
+  height: 55%;
+  width: 55%;
+  color: rgb(3, 3, 87);
+  position: relative;
+  animation: 4s ease-out infinite roll2 ;
+  
+  }
+}
+
+
+@keyframes roll2 {
+  0%{
+      left: 0rem
+  }
+
+  100% {
+    left: 45%;
+   
+  }
+  
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .imgVilleTour {
+    width: 25%;
+    height: 20%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    border: solid 1px black;
+  }
+
+  .imgVilleTour2 {
+    width: 25%;
+    height: 20%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
+
+
+  .DetailTour {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .DetailTour2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .textDetailTour{
+    margin-right: 2px;
+    text-align: justify;
+  }
+  
+  .img2t {
+    border: solid 1px black;
+  }
+
+  .img2t:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .imgVilleTour2:active{
+    transform: scale(2)
+  
+  }
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+
+  .textDetailTour {
+    margin-left: 1rem;
+    font-size: 1rem;
+    border: rgb(255, 255, 255) solid 10px;
+    
+
+    }
+
+  .VilleTour2 {
+    display: flex;
+    flex-direction: row;
+    text-justify: inter-word;
+    flex-wrap: inherit;
+  }
+
+#img-1{
+  margin-right: 15rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+#img-2{
+  margin-right: 20rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+#img-3{
+  margin-right: 20rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+
+  .img2t {
+    box-shadow: 12px 29px 81px 0px rgba(3, 3, 3, 0.75);
+    /*Ombre mis en place sur les img*/
+  }
+
+  .img2t:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 12px 29px 81px 50px white;
+    /*Ombre mis en place sur les img*/
+  }
+.DetailTour2{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .imgVilleTour {
+    width: 20%;
+    height: 20%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    border-radius: 25px;
+    border: solid black 2px;
+  }
+
+  .imgVilleTour2 {
+    width: 60%;
+    height: 60%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 25px;
+  }
+
+  .DetailTour {
+    display: flex;
+    align-items: center;
+  }
+
+  scroll-container {
+    overflow-y: scroll;
+    /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+    scroll-behavior: smooth;
+    /*permet de scroll en douceur  */
+  }
+}
+
+scroll-container {
+  overflow-y: scroll;
+  /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+  scroll-behavior: smooth;
+  /*permet de scroll en douceur  */
+}
+
+.img2t {
+  transition: transform .3s;
+  /* Animation */
+}
+
+.img2t:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.VilleTour {
+  margin: 1.2rem 1.2rem;
+}
+
+.imgVilleTour2:active{
+  transition: transform .7s;
+  transform: scale(1.5);
+
+}
+.imgVilleTour:not(:active)
+{
+   transition: 0.5s;
+   
+}
+.imgVilleTour2img:not(:active)
+{
+   transition: 0.5s;
+}
+
+.imgVilleTour:active{
+  transition: transform .7s;
+  transform: scale(1.5);
+
+}
+
+
+
+/*Annimation -- Tutuuttttre */
+/*
+.matutur {
+  position: fixed;
+  top: 2%;
+  width: 100%;
+  fill: red;
+  z-index: -1;
+}
+
+
+.matutur .progress-container {
+  width: 100%;
+  height: 8px;
+  color: #b98800;
+  z-index: -1;
+}
+
+.matutur .progress-container .progress-bar {
+  height: 5vh;
+  width: 5%;
+  color: rgb(3, 3, 87);
+  fill: red;
+  z-index: -1;
+}
+
+*/
+
